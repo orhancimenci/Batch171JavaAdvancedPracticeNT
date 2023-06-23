@@ -5,3 +5,5 @@ Uygulama, farklı türdeki medya dosyalarını (ses dosyaları, video dosyaları
 Hem ses dosyaları hem de video dosyaları oynatılabilir ve durdurulabilir özelliklere sahiptir.
 
 Bu durumu polymorphism konseptiyle modellenen bir programla simüle edin.
+
+"Bu sornun uygulamasında ChatGPT den faydalanilmistir."

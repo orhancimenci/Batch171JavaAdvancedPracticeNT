@@ -1,14 +1,18 @@
 package practice05.s01_inheritance;
 
-public class BankaYonetimSistemi {
+import java.time.LocalDate;
+
+public class BankaYonetimUygulamasi {
     public static void main(String[] args) {
+        LocalDate dogumTarihi = LocalDate.of(1985, 03, 15);
+
         // Bireysel müşteri oluşturma
         BireyselMusteriler bireyselMusteri = new BireyselMusteriler(
                 "Ahmet Yılmaz",
                 1001,
                 3000.0,
                 "1234567890",
-                "01/01/1980");
+                dogumTarihi);
 
         System.out.println(bireyselMusteri.toString());
 

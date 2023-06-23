@@ -3,10 +3,10 @@ package practice05.s01_inheritance;
 public class Musteri {
     String musteriAdi;
     int musteriNo;
-    private double hesapBakiyesi;
+    double hesapBakiyesi;
 
-    public Musteri(String musteriAd, int musteriNo, double hesapBakiyesi) {
-        this.musteriAdi = musteriAd;
+    public Musteri(String musteriAdi, int musteriNo, double hesapBakiyesi) {
+        this.musteriAdi = musteriAdi;
         this.musteriNo = musteriNo;
         this.hesapBakiyesi = hesapBakiyesi;
     }
@@ -21,13 +21,13 @@ public class Musteri {
             hesapBakiyesi -= miktar;
             System.out.println(miktar + " TL hesaptan çekildi. Yeni bakiye: " + hesapBakiyesi + " TL");
         } else {
-            System.out.println("Yetersiz bakiye!");
+            System.out.println("Yetersiz bakiye! Hesabınızda " + hesapBakiyesi + " TL bulunmaktadır.");
         }
     }
 
     @Override
     public String toString() {
-        return  "\n\tMüşteri Adı: " + musteriAdi +
+        return "\n\tMüşteri Adı: " + musteriAdi +
                 "\n\tMüşteri No: " + musteriNo +
                 "\n\tHesap Bakiyesi: " + hesapBakiyesi;
     }

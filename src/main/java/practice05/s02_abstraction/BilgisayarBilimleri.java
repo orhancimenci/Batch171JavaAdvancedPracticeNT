@@ -1,4 +1,8 @@
 package practice05.s02_abstraction;
 
-public class BilgisayarBilimleri {
+public class BilgisayarBilimleri extends Kurs {
+    @Override
+    public String kategoriAdi() {
+        return "Bilgisayar";
+    }
 }
